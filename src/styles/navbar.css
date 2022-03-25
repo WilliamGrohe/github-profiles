@@ -1,8 +1,16 @@
 .navbar {
   background-color: var(--purple-light-primary);
-  padding-left: 100px;
-  padding-right: 100px;
+  /* padding-left: 100px;
+  padding-right: 100px; */
 
   font-weight: 600;
 
+}
+
+@media (min-width: 769px){
+  .navbar {
+    padding-left: 100px;
+    padding-right: 100px;
+    
+  }
 }

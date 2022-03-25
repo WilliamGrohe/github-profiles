@@ -1,0 +1,15 @@
+.input-group {
+  width: 600px;
+  max-width: 90%;
+  margin: 16px;
+}
+
+.form-control{
+  border-radius: 10px 0 0 10px;
+}
+
+.btn-search {
+  background-color: var(--purple-light-primary);
+  color: #FFF;
+  border-radius: 0 10px 10px 0;
+}
