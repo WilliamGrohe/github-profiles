@@ -1,0 +1,48 @@
+.container {
+  background-color: #FFF;
+  border-radius: 10px;
+  
+  padding: 20px;
+  width: 700px;
+  max-width: 90%;
+}
+
+.col-avatar {
+  width: 180px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.avatar-image {
+  border-radius: 50%;
+  width: 180px;
+}
+
+.inner-row {
+  display:flex;
+  justify-content: space-between;
+}
+
+.non-btn {
+  color: #FFF;
+  background-color: var(--purple-light-primary);
+  border-radius: 5px;
+
+  padding: 5px;
+  margin: 5px 0;
+  width: 130px;
+}
+
+@media (max-width: 575px) {
+  .row {
+    justify-content: center;
+  }
+
+  .container{
+    justify-content: center;
+  }
+  
+  .avatar-image {
+    width:100px;
+  }
+}

@@ -4,8 +4,9 @@
 
 Simple page to search for github profiles and return their infos.
 Developed with ReactJS using Github API.
+Idea taken from <a href="https://github.com/florinpop17/app-ideas" target="_blank">App Ideas Collection</a>
 
-<h3><a  href="https://wg-login-react.vercel.app/"  target="_blank">🚀 See and test here </a></h3>
+<h3><a  href="https://wg-github-profiles-finder.vercel.app/"  target="_blank">🚀 See and test here </a></h3>
 
 ## ⚙️ Functionalities
 -   [ ] User can enter a username
