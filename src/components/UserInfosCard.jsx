@@ -1,4 +1,5 @@
 import React from "react";
+
 import "../styles/userinfoscard.css";
 
 import PerfilAvatar from "../assets/images/perfil.jpg";

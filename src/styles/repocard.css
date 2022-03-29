@@ -1,0 +1,15 @@
+.card {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.githubIcons {
+  width: 24px;
+}

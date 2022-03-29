@@ -33,6 +33,13 @@
   width: 130px;
 }
 
+.cards {
+  flex-wrap: wrap;
+  width: 700px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 @media (max-width: 575px) {
   .row {
     justify-content: center;
@@ -44,5 +51,7 @@
   
   .avatar-image {
     width:100px;
+
+    margin-bottom: 10px;
   }
 }
