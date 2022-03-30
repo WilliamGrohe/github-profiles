@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import "../styles/repocard.css";
 
@@ -6,7 +6,12 @@ import RepoIcon from "../assets/images/repos.png";
 import StarIcon from "../assets/images/star.png";
 import ForkIcon from "../assets/images/fork.png";
 
+import { GithubContext } from "../context/GithubContext"
+
 export default function ReposCard() {
+
+  const {user}  = useContext(GithubContext)
+
   return (
     <div className="container card">
       <div className="row">
@@ -16,7 +21,7 @@ export default function ReposCard() {
       </div>
       <div className="row">
         <span>
-        Created at:
+        Created at: {user}
         </span>
         </div>
       <div className="row">

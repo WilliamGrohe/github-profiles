@@ -1,15 +1,19 @@
 import React from "react";
 
-import Header  from "./components/Header";
+import { GithubContextProvider } from "./context/GithubContext";
+
+import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import DataReturnedField from "./components/DataReturnedField";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <SearchBar />
-      <DataReturnedField />
+      <GithubContextProvider>
+        <Header />
+        <SearchBar />
+        <DataReturnedField />
+      </GithubContextProvider>
     </div>
   );
 }
