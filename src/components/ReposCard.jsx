@@ -10,7 +10,10 @@ import { GithubContext } from "../context/GithubContext"
 
 export default function ReposCard() {
 
-  const {user}  = useContext(GithubContext)
+  const {user, repos}  = useContext(GithubContext)
+  
+  // console.log(user.login)
+  // console.log(repos)
 
   return (
     <div className="container card">
@@ -21,7 +24,7 @@ export default function ReposCard() {
       </div>
       <div className="row">
         <span>
-        Created at: {user}
+        Created at: {repos.F}
         </span>
         </div>
       <div className="row">

@@ -1,40 +1,45 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import "../styles/userinfoscard.css";
 
 import PerfilAvatar from "../assets/images/perfil.jpg";
 
+import { GithubContext } from "../context/GithubContext"
+
 export default function UserInfosCard() {
+
+  const { user }  = useContext(GithubContext)
+
   return (
     <div className="container">
-      <div class="row">
+      <div className="row">
         <div className="col-avatar">
           <img
-            src={PerfilAvatar}
+            src={user.avatar_url ? user.avatar_url : PerfilAvatar}
             className="avatar-image"
             alt="Foto de perfil do usuário"
           />
         </div>
-        <div class="col-sm">
+        <div className="col-sm">
           <div className="inner-row">
-            <span>Name Lastname</span>
+            <h4>{user.name ? user.name : 'Name: Not Defined'}</h4>
             <button className="btn btn-primary">Visit Github Profile</button>
           </div>
           <div className="row">
             <div className="inner-row">
-              Location: 
+              {user.location ? user.location : 'Location: Not Defined'}
             </div>
           </div>
           <div className="row">
             <div className="inner-row">
-              <span className="non-btn">Followers: </span>
-              <span className="non-btn">Following: </span>
+              <span className="non-btn">Followers: {user.followers}</span>
+              <span className="non-btn">Following: {user.following}</span>
             </div>
           </div>
           <div className="row">
             <div className="inner-row">
-              <span className="non-btn">Repositories: </span>
-              <span className="non-btn">Public Gist:</span>
+              <span className="non-btn">Repositories: {user.public_repos}</span>
+              <span className="non-btn">Public Gist: {user.public_gists}</span>
             </div>
           </div>
         </div>

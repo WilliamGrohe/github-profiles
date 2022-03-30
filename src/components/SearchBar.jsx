@@ -22,7 +22,7 @@ export default function SearchBar() {
 
   return (
     <>
-      <div class="input-group ">
+      <div className="input-group ">
         <input
           type="text"
           className="form-control"
@@ -33,7 +33,7 @@ export default function SearchBar() {
           onChange={(v) => setInputName(v.target.value)}
         />
         <button
-          class="btn btn-search"
+          className="btn btn-search"
           type="button"
           id="button-addon2"
           onClick={handleSubmitSearch}
