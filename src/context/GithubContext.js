@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 
-const APIURL = 'http://api.github.com/users/'
+const APIURL = 'https://api.github.com/users/'
 
 export const GithubContext = createContext({})
 
