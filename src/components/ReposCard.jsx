@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 
 import "../styles/repocard.css";
 
@@ -6,43 +6,35 @@ import RepoIcon from "../assets/images/repos.png";
 import StarIcon from "../assets/images/star.png";
 import ForkIcon from "../assets/images/fork.png";
 
-import { GithubContext } from "../context/GithubContext"
-
-export default function ReposCard() {
-
-  const {user, repos}  = useContext(GithubContext)
-  
-  // console.log(user.login)
-  // console.log(repos)
+export default function ReposCard({ name, created_at, stars, forks, url }) {
 
   return (
     <div className="container card">
       <div className="row">
-        <a href="#">
-          <img src={RepoIcon} alt="Icone de repositório" /> Repo Name
+        <a href={url} target="_blank">
+          <img src={RepoIcon} alt="Icone de repositório" /> {name}
         </a>
       </div>
       <div className="row">
-        <span>
-        Created at: {repos.F}
-        </span>
-        </div>
+        <span>Created at: {created_at}</span>
+      </div>
       <div className="row">
         <span>
-        <img
-          src={StarIcon}
-          className="githubIcons"
-          alt="Icone de repositório"
+          <img
+            src={StarIcon}
+            className="githubIcons"
+            alt="Icone de repositório"
           />
-        : 2 
-        <img
-          src={ForkIcon}
-          className="githubIcons"
-          alt="Icone de repositório"
+          : {stars}
+          <img
+            src={ForkIcon}
+            className="githubIcons"
+            alt="Icone de repositório"
           />
-        : 5          
+          : {forks}
         </span>
       </div>
     </div>
+
   );
 }

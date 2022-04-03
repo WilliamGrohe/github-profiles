@@ -9,8 +9,8 @@ Idea taken from <a href="https://github.com/florinpop17/app-ideas" target="_blan
 <h3><a  href="https://wg-github-profiles-finder.vercel.app/"  target="_blank">🚀 See and test here </a></h3>
 
 ## ⚙️ Functionalities
--   [ ] User can enter a username
--   [ ] User can click on search button to retrieve information
+-   [x] User can enter a username
+-   [x] User can click on search button to retrieve information
 -   [ ] User can see the avatar, username, followers and repository count of searched user
 -   [ ] User can see the top 4 repositories of searched user
 -   [ ] User should get an alert if the username is not valid

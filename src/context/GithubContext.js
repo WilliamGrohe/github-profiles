@@ -19,7 +19,6 @@ export function GithubContextProvider(props) {
       const response = await fetch(APIURL + username);
       const data = await response.json()
       setUser(data)
-      console.log(data)
     }
     
     useEffect(() => {
@@ -32,9 +31,6 @@ export function GithubContextProvider(props) {
       findUser(username)
       }, [username])
       
-      // const ff = Object.entries(user)
-      // console.log(ff)
-
   return(
     <GithubContext.Provider value={{user, repos, setUsername}}>
       {props.children}
