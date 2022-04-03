@@ -7,6 +7,10 @@
 
 }
 
+.btn-search:hover {
+  color:#cc99ff
+}
+
 @media (min-width: 769px){
   .navbar {
     padding-left: 100px;

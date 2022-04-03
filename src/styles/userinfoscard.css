@@ -33,6 +33,17 @@
   width: 130px;
 }
 
+a.non-btn {
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.non-btn:hover{
+  color: #cc99ff;
+}
+
 .cards {
   flex-wrap: wrap;
   width: 700px;
