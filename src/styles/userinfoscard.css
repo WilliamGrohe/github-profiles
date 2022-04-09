@@ -51,6 +51,12 @@ a.non-btn:hover{
   margin: 0 auto;
 }
 
+.user-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (max-width: 575px) {
   .row {
     justify-content: center;

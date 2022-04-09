@@ -23,7 +23,7 @@ export default function UserInfosCard() {
         <div className="col-sm">
           <div className="inner-row">
             <h4>{user.name ? user.name : 'Name: Not Defined'}</h4>
-            <a href={user.html_url}  target="_blank" className="non-btn">Visit Github Profile</a>
+            <a href={user.html_url}  target="_blank"  rel="noreferrer" className="non-btn">Visit Github Profile</a>
           </div>
           <div className="row">
             <div className="inner-row">

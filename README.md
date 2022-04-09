@@ -13,7 +13,7 @@ Idea taken from <a href="https://github.com/florinpop17/app-ideas" target="_blan
 -   [x] User can click on search button to retrieve information
 -   [x] User can see the avatar, username, followers and repository count of searched user
 -   [x] User can see the top 4 repositories of searched user
--   [ ] User should get an alert if the username is not valid
+-   [X] User should get an alert if the username is not valid
 
 <h3 align="center">Bonus features</h3>
 
@@ -26,14 +26,14 @@ Idea taken from <a href="https://github.com/florinpop17/app-ideas" target="_blan
 - Bootstrap
 
 ## 🎨 Layout
-O layout da aplicação está disponível no Figma:
+The layout of application is available on Figma:
 
 <a target="_blank" href="https://www.figma.com/file/K0HCr2QlqwT7GtfzEe1YRs/Github-Profile-Finder?node-id=0%3A1">
   <img alt="Made by William Grohe" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
 </a>
 
 
-## 🦸‍♂️ Autor
+## 🦸‍♂️ Author
 <a href="https://williamgrohe.github.io/">
  <img align="center" style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4E03AQEHPMde8rCohg/profile-displayphoto-shrink_200_200/0/1629258171132?e=1650499200&v=beta&t=w7RNELRblLLDOW1V2UypG3ZF8HjjjesvfKHDYS3d3H8" width="100px;" alt=""/>
  <br />
