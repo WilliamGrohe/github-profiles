@@ -1,0 +1,25 @@
+label {
+  width: 3rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: orange;
+  border-radius: 1rem;
+}
+
+#toggle-bullet {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: purple;
+  border-radius:50%;
+  margin-right: -1rem;
+}
+
+input:checked #toggle-bullet {
+  background:red;
+}
+
+div div{
+}

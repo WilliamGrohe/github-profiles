@@ -1,0 +1,16 @@
+/* THEME SWITCH COLORS */
+main.dark {
+  background-color: var(--dark-grey);
+}
+
+main.dark .dark{
+  background-color: var(--dark-grey-primary);
+}
+
+main.dark input{
+  background-color: var(--soft-grey);
+
+}
+main.dark .container{
+  background-color: var(--soft-grey);
+}

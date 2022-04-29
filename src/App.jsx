@@ -1,19 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 
-import { GithubContextProvider } from "./context/GithubContext";
+import Index from "./pages/index";
 
-import Header from "./components/Header";
-import SearchBar from "./components/SearchBar";
-import DataReturnedField from "./components/DataReturnedField";
+import { ThemeContextProvider } from "./context/ThemeContext";
+import { ThemeContext } from "./context/ThemeContext";
 
 function App() {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <div className="App">
-      <GithubContextProvider>
-        <Header />
-        <SearchBar />
-        <DataReturnedField />
-      </GithubContextProvider>
+      <ThemeContextProvider>
+        <Index themes={theme} />
+      </ThemeContextProvider>
     </div>
   );
 }

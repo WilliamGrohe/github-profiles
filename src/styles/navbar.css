@@ -1,14 +1,16 @@
 .navbar {
   background-color: var(--purple-light-primary);
-  /* padding-left: 100px;
-  padding-right: 100px; */
 
   font-weight: 600;
-
 }
 
 .btn-search:hover {
   color:#cc99ff
+}
+
+.navbar.light {
+  background-color: var(--dark-grey-primary);
+  
 }
 
 @media (min-width: 769px){

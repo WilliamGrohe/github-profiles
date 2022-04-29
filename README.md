@@ -17,7 +17,7 @@ Idea taken from <a href="https://github.com/florinpop17/app-ideas" target="_blan
 
 <h3 align="center">Bonus features</h3>
 
--  [ ] User can toggle dark/light mode
+-  [x] User can toggle dark/light mode
 -  [ ] Selected mode should persist when user comes back to the app again
 
 ## 💻 Technologies

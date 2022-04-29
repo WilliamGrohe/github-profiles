@@ -20,7 +20,14 @@ body {
   background-color: var(--soft-grey);
 }
 
+main{
+  min-height: 100vh; 
+  max-height: 100%;
+  background-color: var(--soft-grey);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
+
