@@ -18,7 +18,7 @@ Idea taken from <a href="https://github.com/florinpop17/app-ideas" target="_blan
 <h3 align="center">Bonus features</h3>
 
 -  [x] User can toggle dark/light mode
--  [ ] Selected mode should persist when user comes back to the app again
+-  [x] Selected mode should persist when user comes back to the app again
 
 ## 💻 Technologies
 - ReactJS 

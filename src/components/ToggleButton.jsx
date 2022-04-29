@@ -6,11 +6,21 @@ import "../styles/togglebutton.css";
 import { ThemeContext } from "../context/ThemeContext";
 
 export function ToggleButton() {
-  const {theme, setTheme} = useContext(ThemeContext)
+  const { theme, setTheme } = useContext(ThemeContext);
 
   function handleToggleTheme() {
-    setTheme((prevState) => !prevState)
+    setTheme((prevState) => !prevState);
   }
 
-  return <Switch onChange={handleToggleTheme} checked={theme} offColor="#ba113b" height={16} width={38}/>
+  localStorage.setItem("darkTheme", theme);
+
+  return (
+    <Switch
+      onChange={handleToggleTheme}
+      checked={theme}
+      offColor="#ba113b"
+      height={16}
+      width={38}
+    />
+  );
 }
